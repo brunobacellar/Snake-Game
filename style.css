@@ -9,8 +9,8 @@
 
 body {
   background-image: url('fundo2.jpeg');
-  background-size: cover; /* Faz a imagem cobrir todo o fundo */
-  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   display: flex;
   min-height: 100vh;
@@ -36,9 +36,9 @@ canvas {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ffd700d6;
+  background: linear-gradient(135deg, #f8e4a0, #d4af37);
   width: 95vw;
-  padding: 20px;
+  padding: 10px;
   border-radius: 0 0 20px 20px;
 }
 
@@ -51,10 +51,10 @@ canvas {
 .direction {
   background-color: #267d75;
   color: white;
-  border: none;
+  border: 1px solid white;
   padding: 15px;
   margin: 0;
-  font-size: 90px;
+  font-size: 45px;
   border-radius: 5px;
   box-shadow: 10px 10px 17px #871616;
 }
@@ -66,40 +66,44 @@ canvas {
 
 .up {
   border-radius: 20px;
-  width: 120px;
-  height: 120px;
-  margin-bottom: 0;
+  width: 70px;
+  height: 70px;
+  margin-bottom: -10px;
 }
 
 .down {
   border-radius: 20px;
-  width: 120px;
-  height: 120px;
-  margin-top: 0;
+  width: 70px;
+  height: 70px;
+  margin-top: -10px;
 }
 
 .left, .right {
   border-radius: 20px;
-  width: 120px;
-  height: 120px;
-  margin: 0 70px;
+  width: 70px;
+  height: 70px;
+  margin: 0 35px;
 }
 
 .score {
   color: #267d75;
-  background-color: #ffd700d6;
+  background: linear-gradient(135deg, #f8e4a0, #d4af37);
   width: 95vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 5rem;
-  text-shadow: 10px 10px 15px #871616;
+  font-size: 3rem;
+  text-shadow:
+  1px 1px 0 white,
+  -1px -1px 0 white,
+  1px -1px 0 white,
+  -1px 1px 0 white;
   border-radius: 20px 20px 0 0;
 }
 
 .score--value {
   font-weight: 700;
-  font-size: 6rem;
+  font-size: 3.5rem;
   display: block;
   margin-top: -10px;
 }
@@ -115,22 +119,22 @@ canvas {
 .game-over {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 5rem;
+  font-size: 2.5rem;
 }
 
 .final-score {
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .btn-play {
   border: none;
   border-radius: 100px;
   padding: 10px 15px 10px 12px;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #333;
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
