@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppings", sans-serif;
+}
+
+body {
+  background-image: url('fundo2.jpeg');
+  background-size: cover; /* Faz a imagem cobrir todo o fundo */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  background-position: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+}
+
+canvas {
+  border: solid 1px white;
+  background-color: #111;
+  width: 95vw;
+}
+
+.joystick {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffd700d6;
+  width: 95vw;
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+}
+
+.horizontal {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.direction {
+  background-color: #267d75;
+  color: white;
+  border: none;
+  padding: 15px;
+  margin: 0;
+  font-size: 90px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 17px #871616;
+}
+
+.direction:active {
+  box-shadow: 5px 5px 10px #1418ce;
+  transform: translateY(4px);
+}
+
+.up {
+  border-radius: 20px;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 0;
+}
+
+.down {
+  border-radius: 20px;
+  width: 120px;
+  height: 120px;
+  margin-top: 0;
+}
+
+.left, .right {
+  border-radius: 20px;
+  width: 120px;
+  height: 120px;
+  margin: 0 70px;
+}
+
+.score {
+  color: #267d75;
+  background-color: #ffd700d6;
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 5rem;
+  text-shadow: 10px 10px 15px #871616;
+  border-radius: 20px 20px 0 0;
+}
+
+.score--value {
+  font-weight: 700;
+  font-size: 6rem;
+  display: block;
+  margin-top: -10px;
+}
+
+.menu-screen {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.game-over {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+.final-score {
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.btn-play {
+  border: none;
+  border-radius: 100px;
+  padding: 10px 15px 10px 12px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+}
